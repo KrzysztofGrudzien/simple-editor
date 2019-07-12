@@ -1,20 +1,19 @@
-@import "_normalize";
-@import "_variables";
+/* Author: Krzysztof Grudzień */
+/* -------------- FONTS ------------- */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap&subset=latin-ext');
 
+/* -------------- ICONS ------------- */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
-html {
-  box-sizing: border-box;
-}
+/* -------------- UTILS ------------- */
+@import "utils/variables.scss";
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
+/* -------------- BASE -------------- */
+@import "base/normalize";
+@import "base/base";
 
-body {
-  background-image:linear-gradient(155deg,
-            $dark-grey,
-            $hard-dark-grey
-  );
-  width: 100%;
-  height: 100vh;
-}
+/* ------------- LAYOUT ------------- */
+
+/* ------------- PAGES -------------- */
+
+/* ------------ COMPONENTS ----------- */
