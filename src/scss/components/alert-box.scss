@@ -1,0 +1,14 @@
+.alert {
+    width: 100%;
+    height: 48px;
+    position: fixed;
+    z-index: 1000;
+
+    &--success {
+        background-color: $olive;
+    }
+
+    &--error {
+        background-color: $red;
+    }
+}
