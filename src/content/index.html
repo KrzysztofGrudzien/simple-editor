@@ -43,6 +43,36 @@
                 <button type="button" class="btn cleanning-up__btn-reload cleanning-up__btn-reload--js">reload</button>
             </p>
         </section>
+        <section class="editor">
+            <h2 class="editor__header">Edit</h2>
+            <p class="editor__tools">
+                <p class="editor__tools-buttons">
+                    <button class="btn-edit btn-edit-size-down--js">A</button>
+                    <button class="btn-edit btn-edit-size-up--js">A</button>
+                </p>
+                <p class="editor__tools-select">
+                    <select name="select" id="select">
+                        <option value="arial">Aa</option>
+                        <option value="times-new-roman">Times New Roman</option>
+                        <option value="slab">Slab</option>
+                        <option value="monospace">Monospace</option>
+                        <option value="script">Script</option>
+                    </select>
+                </p>
+                <p class="editor__tools-buttons">
+                    <button class="btn-edit btn-edit-bold--js">B</button>
+                    <button class="btn-edit btn-edit-underline--js">U</button>
+                    <button class="btn-edit btn-edit-italic--js">I</button>
+                </p>
+                <p class="editor__tools-colorpicer">
+                    <label for="color">colorpicker</label>
+                    <input type="color" id="color" name="color" value="#e66465">
+                </p>
+            </p>
+            <textarea name="textarea" id="text" style="width: 100%; height: 200px"></textarea>
+            <button type="button" class="btn btn__load btn__load--js">load</button>
+            <button type="button" class="btn btn__save btn__save--js">save</button>
+        </section>
     </main>
     <aside class="sidebar">
         <div class="theme-switchers">
