@@ -28,9 +28,14 @@
             <p class="messages__form">
                 <form class="form">
                     <label for="message" class="form__label">Please enter your message below:</label>
-                    <input type="text" class="form__input" id="message">
+                    <input type="text" name="message" class="form__input" id="message">
                     <button type="submit" class="btn message__btn message__btn--js">add</button>
                 </form>
+            </p>
+            <p class="messages__settings">
+                <h3 class="message__settings-header">settings</h3>
+                <label for="amount">How many messages:</label>
+                <input type="number" min="1" max="20" name="amount" id="amount">
             </p>
         </section>
     </main>
