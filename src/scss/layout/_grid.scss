@@ -5,7 +5,7 @@
 .wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: [start header] 80px [content] auto [sidebar] auto [footer end];
+    grid-template-rows: [header-start] 143px [header-end content-start] auto [content-end footer-start] 45px [footer-end];
     grid-template-areas:
             "header header header header"
             "content content content sidebar"
