@@ -1,0 +1,23 @@
+/* ================================== */
+/*         MAIN GRID SETTINGS         */
+/* ================================== */
+
+// .wrapper {
+//     display: grid;
+//     grid-template-columns: repeat(4, 1fr);
+//     grid-template-rows: [header-start] 143px [header-end content-start] auto [content-end footer-start] 45px [footer-end];
+//     grid-template-areas:
+//             "header header header header"
+//             "content content content sidebar"
+//             "footer footer footer footer";
+// }
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1120px 160px 1fr;
+    grid-template-rows: [header-start] 143px [header-end content-start] auto [content-end footer-start] 45px [footer-end];
+    grid-template-areas:
+            "header header header header"
+            "... content sidebar ..."
+            "footer footer footer footer";
+}

@@ -1,0 +1,17 @@
+/* ================================== */
+/*              MAIN MAIN             */
+/* ================================== */
+
+.main {
+    grid-area: content;
+    display: flex;
+    justify-content: center;
+}
+
+.messages {
+    max-width: 40%;
+}
+
+.editor {
+    width: 60%;
+}
