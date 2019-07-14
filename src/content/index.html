@@ -26,19 +26,19 @@
                 <h2 class="messages__header">Your messages<span class="material-icons">playlist_add</span><span
                         class="messages__counter messages__counter--js">10</span></h2>
                 <p class="messages__tooltip messages__tooltip--js">You send 10 messages</p>
-                <p class="messages__form">
+                <div class="messages__form">
                     <form class="form">
                         <label for="message" class="form__label">Please enter your message below:</label>
                         <input type="text" name="message" class="form__input form__input--js" id="message">
                         <button type="submit" class="btn btn-message btn-message--js">add</button>
                     </form>
-                </p>
-                <p class="messages__settings">
+                </div>
+                <div class="messages__settings">
                     <h3 class="message__settings-header">settings</h3>
                     <label for="amount" class="messages__settings-label">How many messages:</label>
                     <input type="number" min="1" max="20" name="amount" id="amount"
                         class="messages__settings-input messages__settings-input--js">
-                </p>
+                </div>
                 <p class="messages__cleanning-up">
                     <button type="button" class="btn btn-remove btn-remove--js">clear</button>
                     <button type="button" class="btn btn-reload btn-reload--js">reload</button>
@@ -46,7 +46,7 @@
             </section>
             <section class="editor">
                 <h2 class="editor__header">Edit</h2>
-                <p class="editor__tools">
+                <div class="editor__tools">
                     <p class="editor__tools-buttons">
                         <button class="btn-edit btn-edit-size-down--js">A</button>
                         <button class="btn-edit btn-edit-size-up--js">A</button>
@@ -70,12 +70,12 @@
                         <input type="color" id="color" name="color" value="#e66465"
                             class="editor__tools-input editor__tools-input--js">
                     </p>
-                </p>
-                <p class="editor__textarea">
-                    <textarea name="textarea" id="text" class="editor__textarea--js"></textarea>
-                    <button type="button" class="btn btn-load btn-load--js">load</button>
-                    <button type="button" class="btn btn-save btn-save--js">save</button>
-                </p>
+                    <p class="editor__textarea">
+                        <textarea name="textarea" id="text" class="editor__textarea--js"></textarea>
+                        <button type="button" class="btn btn-load btn-load--js">load</button>
+                        <button type="button" class="btn btn-save btn-save--js">save</button>
+                    </p>
+                </div>
             </section>
         </main>
         <aside class="sidebar">
@@ -86,8 +86,10 @@
                 <button class="theme-switchers__yellow">Yellow theme</button>
             </div>
         </aside>
-        <footer class="footer">Made by <a class="footer__link" href="http://www.criscode.pl">Krzysztof Grudzień</a> -
-            2019
+        <footer class="footer">
+            <p class="footer__content">Made by <a class="footer__link" href="http://www.criscode.pl">Krzysztof
+                    Grudzień</a> -
+                2019</p>
         </footer>
     </div>
 

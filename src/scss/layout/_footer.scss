@@ -1,0 +1,26 @@
+/* ================================== */
+/*               FOOTER               */
+/* ================================== */
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    text-align: center;
+    font-size: 12px;
+    background-color: $olive;
+
+    &__link:link,
+    &__link:visited,
+    &__link:active,
+    &__link:focus {
+        color: currentColor;
+        text-decoration: none;
+    }
+
+    &__link:hover {
+        text-decoration: underline;
+    }
+}
