@@ -17,76 +17,79 @@
             correctly.
             Your message is empty. Fill up the input field and try again.</p>
     </div>
-    <header class="header">
-        <h1 class="header__heading">SIMPLE EDITOR v.1.0</h1>
-    </header>
-    <main class="main">
-        <section class="messages">
-            <h2 class="messages__header">Your messages<span class="material-icons">playlist_add</span><span
-                    class="messages__counter messages__counter--js">10</span></h2>
-            <p class="messages__tooltip messages__tooltip--js">You send 10 messages</p>
-            <p class="messages__form">
-                <form class="form">
-                    <label for="message" class="form__label">Please enter your message below:</label>
-                    <input type="text" name="message" class="form__input form__input--js" id="message">
-                    <button type="submit" class="btn btn-message btn-message--js">add</button>
-                </form>
-            </p>
-            <p class="messages__settings">
-                <h3 class="message__settings-header">settings</h3>
-                <label for="amount" class="messages__settings-label">How many messages:</label>
-                <input type="number" min="1" max="20" name="amount" id="amount"
-                    class="messages__settings-input messages__settings-input--js">
-            </p>
-            <p class="messages__cleanning-up">
-                <button type="button" class="btn btn-remove btn-remove--js">clear</button>
-                <button type="button" class="btn btn-reload btn-reload--js">reload</button>
-            </p>
-        </section>
-        <section class="editor">
-            <h2 class="editor__header">Edit</h2>
-            <p class="editor__tools">
-                <p class="editor__tools-buttons">
-                    <button class="btn-edit btn-edit-size-down--js">A</button>
-                    <button class="btn-edit btn-edit-size-up--js">A</button>
+    <footer class="wrapper">
+        <header class="header">
+            <h1 class="header__heading">SIMPLE EDITOR v.1.0</h1>
+        </header>
+        <main class="main">
+            <section class="messages">
+                <h2 class="messages__header">Your messages<span class="material-icons">playlist_add</span><span
+                        class="messages__counter messages__counter--js">10</span></h2>
+                <p class="messages__tooltip messages__tooltip--js">You send 10 messages</p>
+                <p class="messages__form">
+                    <form class="form">
+                        <label for="message" class="form__label">Please enter your message below:</label>
+                        <input type="text" name="message" class="form__input form__input--js" id="message">
+                        <button type="submit" class="btn btn-message btn-message--js">add</button>
+                    </form>
                 </p>
-                <p class="editor__tools-select">
-                    <select name="select" id="select" class="editor__tools-select--js">
-                        <option value="arial">Aa</option>
-                        <option value="times-new-roman">Times New Roman</option>
-                        <option value="slab">Slab</option>
-                        <option value="monospace">Monospace</option>
-                        <option value="script">Script</option>
-                    </select>
+                <p class="messages__settings">
+                    <h3 class="message__settings-header">settings</h3>
+                    <label for="amount" class="messages__settings-label">How many messages:</label>
+                    <input type="number" min="1" max="20" name="amount" id="amount"
+                        class="messages__settings-input messages__settings-input--js">
                 </p>
-                <p class="editor__tools-buttons">
-                    <button class="btn-edit btn-edit-bold--js">B</button>
-                    <button class="btn-edit btn-edit-underline--js">U</button>
-                    <button class="btn-edit btn-edit-italic--js">I</button>
+                <p class="messages__cleanning-up">
+                    <button type="button" class="btn btn-remove btn-remove--js">clear</button>
+                    <button type="button" class="btn btn-reload btn-reload--js">reload</button>
                 </p>
-                <p class="editor__tools-colorpicer">
-                    <label for="color" class="editor__tools-label">colorpicker</label>
-                    <input type="color" id="color" name="color" value="#e66465"
-                        class="editor__tools-input editor__tools-input--js">
+            </section>
+            <section class="editor">
+                <h2 class="editor__header">Edit</h2>
+                <p class="editor__tools">
+                    <p class="editor__tools-buttons">
+                        <button class="btn-edit btn-edit-size-down--js">A</button>
+                        <button class="btn-edit btn-edit-size-up--js">A</button>
+                    </p>
+                    <p class="editor__tools-select">
+                        <select name="select" id="select" class="editor__tools-select--js">
+                            <option value="arial">Aa</option>
+                            <option value="times-new-roman">Times New Roman</option>
+                            <option value="slab">Slab</option>
+                            <option value="monospace">Monospace</option>
+                            <option value="script">Script</option>
+                        </select>
+                    </p>
+                    <p class="editor__tools-buttons">
+                        <button class="btn-edit btn-edit-bold--js">B</button>
+                        <button class="btn-edit btn-edit-underline--js">U</button>
+                        <button class="btn-edit btn-edit-italic--js">I</button>
+                    </p>
+                    <p class="editor__tools-colorpicer">
+                        <label for="color" class="editor__tools-label">colorpicker</label>
+                        <input type="color" id="color" name="color" value="#e66465"
+                            class="editor__tools-input editor__tools-input--js">
+                    </p>
                 </p>
-            </p>
-            <p class="editor__textarea">
-                <textarea name="textarea" id="text" class="editor__textarea--js"></textarea>
-                <button type="button" class="btn btn-load btn-load--js">load</button>
-                <button type="button" class="btn btn-save btn-save--js">save</button>
-            </p>
-        </section>
-    </main>
-    <aside class="sidebar">
-        <div class="theme-switchers">
-            <!-- TEST VERSION OF SWITCHERS - now are buttons but will be switchers instead -->
-            <button class="theme-switchers__blue">Blue theme</button>
-            <button class="theme-switchers__olive">Olive theme</button>
-            <button class="theme-switchers__yellow">Yellow theme</button>
-        </div>
-    </aside>
-    <footer class="footer">Made by <a class="footer__link" href="http://www.criscode.pl">Krzysztof Grudzień</a> - 2019
-    </footer>
+                <p class="editor__textarea">
+                    <textarea name="textarea" id="text" class="editor__textarea--js"></textarea>
+                    <button type="button" class="btn btn-load btn-load--js">load</button>
+                    <button type="button" class="btn btn-save btn-save--js">save</button>
+                </p>
+            </section>
+        </main>
+        <aside class="sidebar">
+            <div class="theme-switchers">
+                <!-- TEST VERSION OF SWITCHERS - now are buttons but will be switchers instead -->
+                <button class="theme-switchers__blue">Blue theme</button>
+                <button class="theme-switchers__olive">Olive theme</button>
+                <button class="theme-switchers__yellow">Yellow theme</button>
+            </div>
+        </aside>
+        <footer class="footer">Made by <a class="footer__link" href="http://www.criscode.pl">Krzysztof Grudzień</a> -
+            2019
+        </footer>
+    </div>
 
     <script src="js/main.js"></script>
 </body>
