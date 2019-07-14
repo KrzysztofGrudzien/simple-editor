@@ -29,7 +29,7 @@
                 <form class="form">
                     <label for="message" class="form__label">Please enter your message below:</label>
                     <input type="text" name="message" class="form__input form__input--js" id="message">
-                    <button type="submit" class="btn message__btn message__btn--js">add</button>
+                    <button type="submit" class="btn btn-message btn-message--js">add</button>
                 </form>
             </p>
             <p class="messages__settings">
@@ -38,9 +38,9 @@
                 <input type="number" min="1" max="20" name="amount" id="amount"
                     class="messages__settings-input messages__settings-input--js">
             </p>
-            <p class="cleanning-up">
-                <button type="button" class="btn cleanning-up__btn-remove cleanning-up__btn-remove--js">clear</button>
-                <button type="button" class="btn cleanning-up__btn-reload cleanning-up__btn-reload--js">reload</button>
+            <p class="messages__cleanning-up">
+                <button type="button" class="btn btn-remove btn-remove--js">clear</button>
+                <button type="button" class="btn btn-reload btn-reload--js">reload</button>
             </p>
         </section>
         <section class="editor">
@@ -51,7 +51,7 @@
                     <button class="btn-edit btn-edit-size-up--js">A</button>
                 </p>
                 <p class="editor__tools-select">
-                    <select name="select" id="select">
+                    <select name="select" id="select" class="editor__tools-select--js">
                         <option value="arial">Aa</option>
                         <option value="times-new-roman">Times New Roman</option>
                         <option value="slab">Slab</option>
@@ -65,13 +65,13 @@
                     <button class="btn-edit btn-edit-italic--js">I</button>
                 </p>
                 <p class="editor__tools-colorpicer">
-                    <label for="color">colorpicker</label>
-                    <input type="color" id="color" name="color" value="#e66465">
+                    <label for="color" class="editor__tools-label">colorpicker</label>
+                    <input type="color" id="color" name="color" value="#e66465"
+                        class="editor__tools-input editor__tools-input--js">
                 </p>
             </p>
             <p class="editor__textarea">
-                <textarea name="textarea" id="text" style="width: 100%; height: 200px"
-                    class="editor__textarea--js"></textarea>
+                <textarea name="textarea" id="text" class="editor__textarea--js"></textarea>
                 <button type="button" class="btn btn-load btn-load--js">load</button>
                 <button type="button" class="btn btn-save btn-save--js">save</button>
             </p>
