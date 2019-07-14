@@ -4,7 +4,6 @@
 
 .wrapper {
     display: grid;
-    grid-gap: 15px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: [start header] 80px [content] auto [sidebar] auto [footer end];
     grid-template-areas:
