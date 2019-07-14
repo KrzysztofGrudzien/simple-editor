@@ -7,12 +7,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 143px;
     
     &__heading {
         text-align: center;
         font-weight: 300;
         font-size: 50px;
         letter-spacing: 10px;
+        margin: 0;
     }
 }
