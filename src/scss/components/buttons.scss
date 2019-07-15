@@ -92,3 +92,28 @@
     font-size: 30px;
     cursor: pointer;
 }
+
+/* ================================== */
+/*  BUTTONS SAVING AND LOADING DATA   */
+/* ================================== */
+
+.editor__btn--load, .editor__btn--save {
+    position: relative;
+    width: 110px;
+    height: 36px;
+    margin-right: 2px;
+    background-color: $olive;
+    border: none;
+    border-radius: 5px;
+    color: $white;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.material-icons--load, .material-icons--save {
+    position: absolute;
+    top: 6px;
+    left: 2px;
+    font-size: 24px;
+}
