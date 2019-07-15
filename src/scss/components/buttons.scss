@@ -12,6 +12,7 @@
     color: $white;
     text-transform: uppercase;
     font-size: 14px;
+    cursor: pointer;
 }
 
 .material-icons--add {
@@ -37,6 +38,7 @@
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .material-icons--delete, .material-icons--refresh {
@@ -58,6 +60,7 @@
     color: $olive;
     font-size: 30px;
     text-align: center;
+    cursor: pointer;
 }
 
 .material-icons--size-up, .material-icons--size-down {
@@ -87,4 +90,5 @@
     background: none;
     color: $olive;
     font-size: 30px;
+    cursor: pointer;
 }
