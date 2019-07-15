@@ -61,6 +61,19 @@
     font-size: 30px;
     text-align: center;
     cursor: pointer;
+
+    &--bold {
+        font-weight: 700;
+    }
+
+    &--underline {
+        text-decoration: underline;
+    }
+
+    &--italic {
+        font-style: italic;
+        font-family: 'Times New Roman', Times, serif;
+    }   
 }
 
 .material-icons--size-up, .material-icons--size-down {
@@ -69,19 +82,6 @@
     right: 0;
     font-size: 14px;
     color: $white;
-}
-
-.editor__btn--bold {
-    font-weight: 700;
-}
-
-.editor__btn--underline {
-    text-decoration: underline;
-}
-
-.editor__btn--italic {
-    font-style: italic;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 .editor__select {
