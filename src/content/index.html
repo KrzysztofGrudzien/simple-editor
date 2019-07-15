@@ -30,7 +30,7 @@
                     <form class="form">
                         <label for="message" class="form__label">Please enter your message below:</label>
                         <input type="text" name="message" class="form__input form__input--js" id="message">
-                        <button type="submit" class="btn btn-message btn-message--js">add</button>
+                        <button type="submit" class="form__btn form__btn--js">add</button>
                     </form>
                 </div>
                 <div class="messages__settings">
@@ -40,16 +40,16 @@
                         class="messages__settings-input messages__settings-input--js">
                 </div>
                 <p class="messages__cleanning-up">
-                    <button type="button" class="btn btn-remove btn-remove--js">clear</button>
-                    <button type="button" class="btn btn-reload btn-reload--js">reload</button>
+                    <button type="button" class="message__btn message__btn--remove-js">clear</button>
+                    <button type="button" class="message__btn message__btn--reload-js">reload</button>
                 </p>
             </section>
             <section class="editor">
                 <h2 class="editor__header">Edit</h2>
                 <div class="editor__tools">
                     <p class="editor__tools-buttons">
-                        <button type="button" class="btn-edit btn-edit-size-down--js">A</button>
-                        <button type="button" class="btn-edit btn-edit-size-up--js">A</button>
+                        <button type="button" class="editor__btn editor__btn--size-down-js">A</button>
+                        <button type="button" class="editor__btn editor__btn--size-up-js">A</button>
                     </p>
                     <p class="editor__tools-select">
                         <select name="select" id="select" class="editor__tools-select--js">
@@ -61,9 +61,9 @@
                         </select>
                     </p>
                     <p class="editor__tools-buttons">
-                        <button type="button" class="btn-edit btn-edit-bold--js">B</button>
-                        <button type="button" class="btn-edit btn-edit-underline--js">U</button>
-                        <button type="button" class="btn-edit btn-edit-italic--js">I</button>
+                        <button type="button" class="editor__btn editor__btn--bold-js">B</button>
+                        <button type="button" class="editor__btn editor__btn--underline-js">U</button>
+                        <button type="button" class="editor__btn editor__btn--italic-js">I</button>
                     </p>
                     <p class="editor__tools-colorpicer">
                         <label for="color" class="editor__tools-label">colorpicker</label>
@@ -71,9 +71,9 @@
                             class="editor__tools-input editor__tools-input--js">
                     </p>
                     <p class="editor__textarea">
-                        <textarea name="textarea" id="text" class="editor__textarea--js" style="width: 100%"></textarea>
-                        <button type="button" class="btn btn-load btn-load--js">load</button>
-                        <button type="button" class="btn btn-save btn-save--js">save</button>
+                        <textarea name="textarea" id="text" class="editor__textarea--js"></textarea>
+                        <button type="button" class="editor__btn editor__btn--load-js">load</button>
+                        <button type="button" class="editor__btn editor__btn--save-js">save</button>
                     </p>
                 </div>
             </section>
