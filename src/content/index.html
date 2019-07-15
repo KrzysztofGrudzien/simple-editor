@@ -30,7 +30,8 @@
                     <form class="form">
                         <label for="message" class="form__label">Please enter your message below:</label>
                         <input type="text" name="message" class="form__input form__input--js" id="message">
-                        <button type="submit" class="form__btn form__btn--js">add</button>
+                        <button type="submit" class="form__btn form__btn--js"><span
+                                class="material-icons material-icons--add">add</span>add</button>
                     </form>
                 </div>
                 <div class="messages__settings">
@@ -40,19 +41,23 @@
                         class="messages__settings-input messages__settings-input--js">
                 </div>
                 <p class="messages__cleanning-up">
-                    <button type="button" class="message__btn message__btn--remove-js">clear</button>
-                    <button type="button" class="message__btn message__btn--reload-js">reload</button>
+                    <button type="button" class="message__btn message__btn--remove-js"><span
+                            class="material-icons material-icons--delete">delete_forever</span>clear</button>
+                    <button type="button" class="message__btn message__btn--reload-js"><span
+                            class="material-icons material-icons--refresh">refresh</span>reload</button>
                 </p>
             </section>
             <section class="editor">
                 <h2 class="editor__header">Edit<span class="material-icons">mode_edit</span></h2>
                 <div class="editor__tools">
                     <p class="editor__tools-buttons">
-                        <button type="button" class="editor__btn editor__btn--size-down-js">A</button>
-                        <button type="button" class="editor__btn editor__btn--size-up-js">A</button>
+                        <button type="button" class="editor__btn editor__btn--size-down-js">A<span
+                                class="material-icons material-icons--size-down">arrow_drop_down</span></button>
+                        <button type="button" class="editor__btn editor__btn--size-up-js">A<span
+                                class="material-icons material-icons--size-up">arrow_drop_up</span></button>
                     </p>
                     <p class="editor__tools-select">
-                        <select name="select" id="select" class="editor__tools-select--js">
+                        <select name="select" id="select" class="editor__select editor__select--js">
                             <option value="arial">Aa</option>
                             <option value="times-new-roman">Times New Roman</option>
                             <option value="slab">Slab</option>
@@ -61,9 +66,10 @@
                         </select>
                     </p>
                     <p class="editor__tools-buttons">
-                        <button type="button" class="editor__btn editor__btn--bold-js">B</button>
-                        <button type="button" class="editor__btn editor__btn--underline-js">U</button>
-                        <button type="button" class="editor__btn editor__btn--italic-js">I</button>
+                        <button type="button" class="editor__btn editor__btn--bold editor__btn--bold-js">B</button>
+                        <button type="button"
+                            class="editor__btn editor__btn--underline editor__btn--underline-js">U</button>
+                        <button type="button" class="editor__btn editor__btn--italic editor__btn--italic-js">I</button>
                     </p>
                     <p class="editor__tools-colorpicer">
                         <label for="color" class="editor__tools-label">colorpicker</label>
@@ -72,18 +78,20 @@
                     </p>
                     <p class="editor__textarea">
                         <textarea name="textarea" id="text" class="editor__textarea--js"></textarea>
-                        <button type="button" class="editor__btn editor__btn--load-js">load</button>
-                        <button type="button" class="editor__btn editor__btn--save-js">save</button>
+                        <button type="button" class="editor__btn editor__btn--load editor__btn--load-js"><span
+                                class="material-icons material-icons--load">system_update_alt</span>load</button>
+                        <button type="button" class="editor__btn editor__btn--save editor__btn--save-js"><span
+                                class="material-icons material-icons--save">save</span>save</button>
                     </p>
                 </div>
             </section>
         </main>
         <aside class="sidebar">
             <div class="theme-switchers">
-                <!-- TEST VERSION OF SWITCHERS - now are buttons but will be switchers instead -->
+                <!-- TEST VERSION OF SWITCHERS - now are buttons but will be switchers instead
                 <button class="theme-switchers__blue">Blue theme</button>
                 <button class="theme-switchers__olive">Olive theme</button>
-                <button class="theme-switchers__yellow">Yellow theme</button>
+                <button class="theme-switchers__yellow">Yellow theme</button> -->
             </div>
         </aside>
         <footer class="footer">
