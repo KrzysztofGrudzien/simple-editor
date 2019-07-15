@@ -1,5 +1,5 @@
 /* ================================== */
-/*          BUTTON ADDING MESSAGE        */
+/*        BUTTON ADDING MESSAGE       */
 /* ================================== */
 
 .form__btn {
@@ -44,4 +44,47 @@
     top: 6px;
     left: 2px;
     font-size: 26px;
+}
+
+/* ================================== */
+/*       BUTTONS FORMATING TEXT       */
+/* ================================== */
+
+.editor__btn {
+    position: relative;
+    min-width: 40px;
+    border: none;
+    background: none;
+    color: $olive;
+    font-size: 30px;
+    text-align: center;
+}
+
+.material-icons--size-up, .material-icons--size-down {
+    position: absolute;
+    top: 4px;
+    right: 0;
+    font-size: 14px;
+    color: $white;
+}
+
+.editor__btn--bold {
+    font-weight: 700;
+}
+
+.editor__btn--underline {
+    text-decoration: underline;
+}
+
+.editor__btn--italic {
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.editor__select {
+    width: 60px;
+    border: none;
+    background: none;
+    color: $olive;
+    font-size: 30px;
 }

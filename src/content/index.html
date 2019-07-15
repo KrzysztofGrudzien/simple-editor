@@ -51,11 +51,13 @@
                 <h2 class="editor__header">Edit<span class="material-icons">mode_edit</span></h2>
                 <div class="editor__tools">
                     <p class="editor__tools-buttons">
-                        <button type="button" class="editor__btn editor__btn--size-down-js">A</button>
-                        <button type="button" class="editor__btn editor__btn--size-up-js">A</button>
+                        <button type="button" class="editor__btn editor__btn--size-down-js">A<span
+                                class="material-icons material-icons--size-down">arrow_drop_down</span></button>
+                        <button type="button" class="editor__btn editor__btn--size-up-js">A<span
+                                class="material-icons material-icons--size-up">arrow_drop_up</span></button>
                     </p>
                     <p class="editor__tools-select">
-                        <select name="select" id="select" class="editor__tools-select--js">
+                        <select name="select" id="select" class="editor__select editor__select--js">
                             <option value="arial">Aa</option>
                             <option value="times-new-roman">Times New Roman</option>
                             <option value="slab">Slab</option>
@@ -64,9 +66,10 @@
                         </select>
                     </p>
                     <p class="editor__tools-buttons">
-                        <button type="button" class="editor__btn editor__btn--bold-js">B</button>
-                        <button type="button" class="editor__btn editor__btn--underline-js">U</button>
-                        <button type="button" class="editor__btn editor__btn--italic-js">I</button>
+                        <button type="button" class="editor__btn editor__btn--bold editor__btn--bold-js">B</button>
+                        <button type="button"
+                            class="editor__btn editor__btn--underline editor__btn--underline-js">U</button>
+                        <button type="button" class="editor__btn editor__btn--italic editor__btn--italic-js">I</button>
                     </p>
                     <p class="editor__tools-colorpicer">
                         <label for="color" class="editor__tools-label">colorpicker</label>
@@ -75,8 +78,8 @@
                     </p>
                     <p class="editor__textarea">
                         <textarea name="textarea" id="text" class="editor__textarea--js"></textarea>
-                        <button type="button" class="editor__btn editor__btn--load-js">load</button>
-                        <button type="button" class="editor__btn editor__btn--save-js">save</button>
+                        <button type="button" class="editor__btn editor__btn--load editor__btn--load-js">load</button>
+                        <button type="button" class="editor__btn editor__btn--save editor__btn--save-js">save</button>
                     </p>
                 </div>
             </section>
