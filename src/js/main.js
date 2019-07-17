@@ -1,3 +1,8 @@
 "use strict";
+const btnReload = document.querySelector('.message__btn--reload-js');
 
-console.log(`Hello world!`);
+function reloadServer() {
+    location.reload(true);
+}
+
+btnReload.addEventListener('click', reloadServer);
