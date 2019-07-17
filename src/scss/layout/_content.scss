@@ -14,4 +14,31 @@
 
 .editor {
     width: 60%;
+    display: flex;
+    flex-direction: column;
+
+    &__header {
+        font-size: 32px;
+        font-weight: 600;
+        color: $light-grey;
+        width: 150px;
+        margin: 0;
+    }
+
+    &__tools {
+        display: flex;
+        margin: 0;
+    }
+
+    &__box {
+        display: flex;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    &__textarea {
+        width: 100%;
+    }
 }
