@@ -13,5 +13,65 @@
 }
 
 .editor {
+    display: flex;
+    flex-direction: column;
     width: 60%;
+
+    &__header {
+        width: 150px;
+        margin: 0;
+        font-size: 32px;
+        font-weight: 400;
+        color: $light-grey;
+
+        .material-icons--edit {
+            margin-left: 15px;
+            font-size: 29px;
+        }
+    }
+
+    &__tools {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    &__box {
+        display: flex;
+
+        p {
+            margin: 0 2px 0 0;
+        }
+    }
+
+    &__textarea {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 672px;
+        height: 450px;
+        margin: 0 0 5px 0;
+    }
+
+    &__textarea-edit {
+        width: 672px;
+        height: 450px;
+        border-radius: 5px;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0;
+    }
+
+}
+
+.sidebar {
+    padding: 40px 0 0 5px;
+
+        &__theme-switchers {
+            display: flex;
+            flex-direction: column;
+        }
 }
