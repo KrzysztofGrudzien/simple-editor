@@ -6,6 +6,7 @@ const btnSizeUp = document.querySelector('.editor__btn--size-up-js');
 const btnBold = document.querySelector('.editor__btn--bold-js');
 const btnUnderline = document.querySelector('.editor__btn--underline-js');
 const btnItalic = document.querySelector('.editor__btn--italic-js');
+const counterMessages = document.querySelector('.messages__counter--js');
 const textMessage = document.querySelector('.form__textarea--js');
 const allTextMessages = document.querySelector('.editor__textarea-edit--js');
 
@@ -16,9 +17,8 @@ function addMessage(e) {
     e.preventDefault();
     messages.push(textMessage.value);
     textMessage.value = '';
-    console.log(messages.length);
+    counterMessages.textContent = messages.length;
 }
-console.log(messages);
 
 function fontSizeDown() {
     allTextMessages.style.fontSize = `${size - 1}px`;

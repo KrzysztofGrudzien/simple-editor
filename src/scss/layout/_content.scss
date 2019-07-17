@@ -78,11 +78,25 @@
         margin: 0;
         font-size: 32px;
         font-weight: 400;
+        position: relative;
 
         .material-icons--playlist {
             font-size: 32px;
             margin-left: 15px;
         }
+    }
+
+    &__counter {
+        width: 32px;
+        height: 32px;
+        display: inline-block;
+        position: absolute;
+        right: 20px;
+        border-radius: 50%;
+        background-color: $olive;
+        line-height: 32px;
+        text-align: center;
+        font-size: 16px;
     }
 
     &__form {
