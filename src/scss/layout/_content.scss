@@ -116,11 +116,24 @@
     }
 
     &__settings-header {
-        margin: 100px 0 0 0;
+        margin: 50px 0 0 0;
         font-size: 32px;
         font-weight: 400;
+        color: $olive;
 
         .material-icons--settings {
+            font-size: 32px;
+            margin-left: 15px;
+        }
+    }
+
+    &__cleaning-header {
+        margin: 20px 0 0 0;
+        font-size: 32px;
+        font-weight: 400;
+        color: $olive;
+
+        .material-icons--clear {
             font-size: 32px;
             margin-left: 15px;
         }
