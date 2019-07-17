@@ -94,13 +94,23 @@
 
                 &__label {
                     height: 48px;
-                    width: 400px;
+                    width: 428px;
                     background-color: $olive;
                     color: $white;
                     border-radius: 5px 5px 0 0;
                     line-height: 48px;
                     padding-left: 20px;
-            }
+                }
+
+                &__textarea {
+                    height: 217px;
+                    width: 428px;
+                    border-radius: 0 0 5px 5px;
+                }
+
+                &__btn {
+                    margin-left: 318px;
+                }
         }
     }
 }
