@@ -50,7 +50,8 @@
             <section class="editor">
                 <h2 class="editor__heading" hidden>Edit</h2>
                 <section class="editor__tools">
-                    <h2 class="editor__header">Edit<span class="material-icons">mode_edit</span></h2>
+                    <h2 class="editor__header">Edit<span class="material-icons material-icons--edit">mode_edit</span>
+                    </h2>
                     <div class="editor__box">
                         <p class="editor__tools-buttons">
                             <button type="button" class="editor__btn editor__btn--size-down-js">A<span
@@ -74,26 +75,25 @@
                             <button type="button"
                                 class="editor__btn editor__btn--italic editor__btn--italic-js">I</button>
                         </p>
-                        <p class="editor__tools-colorpicer">
-                            <label for="color" class="editor__tools-label">colorpicker</label>
-                            <input type="color" id="color" name="color" value="#e66465"
-                                class="editor__tools-input editor__tools-input--js">
-                        </p>
                     </div>
                 </section>
                 <p class="editor__textarea">
-                    <textarea name="textarea" id="text" class="editor__textarea--js"></textarea>
-                    <button type="button" class="editor__btn editor__btn--load editor__btn--load-js"><span
-                            class="material-icons material-icons--load">system_update_alt</span>load</button>
-                    <button type="button" class="editor__btn editor__btn--save editor__btn--save-js"><span
-                            class="material-icons material-icons--save">save</span>save</button>
+                    <textarea name="textarea" id="text"
+                        class="editor__textarea-edit editor__textarea-edit--js"></textarea>
+                    <p class="editor__buttons">
+                        <button type="button" class="editor__btn editor__btn--load editor__btn--load-js"><span
+                                class="material-icons material-icons--load">system_update_alt</span>load</button>
+                        <button type="button" class="editor__btn editor__btn--save editor__btn--save-js"><span
+                                class="material-icons material-icons--save">save</span>save</button>
+                    </p>
+
                 </p>
             </section>
         </main>
         <aside class="sidebar">
-            <div class="theme-switchers">
-                <input type="checkbox" class="sidebar__switcher sidebar__switcher--blue" checked>
-                <input type="checkbox" class="sidebar__switcher sidebar__switcher--olive">
+            <div class="sidebar__theme-switchers">
+                <input type="checkbox" class="sidebar__switcher sidebar__switcher--blue">
+                <input type="checkbox" class="sidebar__switcher sidebar__switcher--olive" checked>
                 <input type="checkbox" class="sidebar__switcher sidebar__switcher--yellow">
             </div>
         </aside>
