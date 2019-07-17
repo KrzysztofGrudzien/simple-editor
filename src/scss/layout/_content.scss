@@ -47,20 +47,20 @@
         flex-direction: column;
         justify-content: space-between;
         width: 672px;
-        height: 450px;
+        height: 500px;
         margin: 0 0 5px 0;
     }
 
     &__textarea-edit {
         width: 672px;
-        height: 450px;
+        height: 500px;
         border-radius: 5px;
     }
 
     &__buttons {
         display: flex;
         justify-content: flex-end;
-        margin: 0;
+        margin-top: 5px;
     }
 
 }
@@ -106,6 +106,7 @@
                     height: 217px;
                     width: 428px;
                     border-radius: 0 0 5px 5px;
+                    margin-bottom: 5px;
                 }
 
                 &__btn {
