@@ -6,11 +6,10 @@
     grid-area: content;
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
-.messages {
-    max-width: 40%;
-}
+/* ------------- EDITOR ------------- */
 
 .editor {
     display: flex;
@@ -49,23 +48,112 @@
         flex-direction: column;
         justify-content: space-between;
         width: 672px;
-        height: 450px;
+        height: 500px;
         margin: 0 0 5px 0;
     }
 
     &__textarea-edit {
         width: 672px;
-        height: 450px;
+        height: 500px;
         border-radius: 5px;
     }
 
     &__buttons {
         display: flex;
         justify-content: flex-end;
-        margin: 0;
+        margin-top: 5px;
     }
 
 }
+
+/* ------------- MESSENGER ------------- */
+
+.messages {
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+
+    &__header {
+        margin: 0;
+        font-size: 32px;
+        font-weight: 400;
+
+        .material-icons--playlist {
+            font-size: 32px;
+            margin-left: 15px;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3px;
+
+        .form {
+            display: flex;
+            flex-wrap: wrap;
+
+                &__label {
+                    height: 48px;
+                    width: 428px;
+                    background-color: $olive;
+                    color: $white;
+                    border-radius: 5px 5px 0 0;
+                    line-height: 48px;
+                    padding-left: 20px;
+                }
+
+                &__textarea {
+                    height: 217px;
+                    width: 428px;
+                    border-radius: 0 0 5px 5px;
+                    margin-bottom: 5px;
+                }
+
+                &__btn {
+                    margin-left: 318px;
+                }
+        }
+    }
+
+    &__settings-label {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    &__settings-input {
+        width: 57px;
+        height: 38px;
+        margin-left: 25px;
+        text-align: center;
+    }
+
+    &__settings-header {
+        margin: 50px 0 20px 0;
+        font-size: 32px;
+        font-weight: 400;
+        color: $olive;
+
+        .material-icons--settings {
+            font-size: 32px;
+            margin-left: 15px;
+        }
+    }
+
+    &__cleaning-header {
+        margin: 20px 0 20px 0;
+        font-size: 32px;
+        font-weight: 400;
+        color: $olive;
+
+        .material-icons--clear {
+            font-size: 32px;
+            margin-left: 15px;
+        }
+    }
+}
+
+/* -------------- SIDEBAR -------------- */
 
 .sidebar {
     padding: 40px 0 0 5px;
