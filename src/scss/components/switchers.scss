@@ -1,0 +1,114 @@
+/* ================================== */
+/*          THEMES SWITCHERS          */
+/* ================================== */
+
+/* ------------- OLIVE SWITCHER ------------- */
+
+input[type=checkbox].sidebar__switcher--olive {
+    position: relative;
+    width: 48px;
+    height: 24px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border-radius: 24px;
+    background-color: $light-grey;
+    transition: background-color 0.1s ease-in-out;
+    outline: 0;
+    cursor: pointer;
+}
+
+input[type=checkbox].sidebar__switcher--olive:checked {
+    background-color: $olive;
+}
+
+input[type=checkbox].sidebar__switcher--olive::after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-color: $white;
+    border-radius: 24px;
+    transform: scale(0.8);
+    left: 0;
+    transition: left 0.1s ease-in-out;
+    box-shadow: 0 1px 4px rgba(0,0,0,.4); 
+}
+
+input[type=checkbox].sidebar__switcher--olive:checked::after {
+    left: 24px;
+}
+
+/* ------------- BLUE SWITCHER ------------- */
+
+input[type=checkbox].sidebar__switcher--blue {
+    position: relative;
+    width: 48px;
+    height: 24px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border-radius: 24px;
+    background-color: $light-grey;
+    transition: background-color 0.1s ease-in-out;
+    outline: 0;
+    cursor: pointer;
+}
+
+input[type=checkbox].sidebar__switcher--blue:checked {
+    background-color: $blue;
+}
+
+input[type=checkbox].sidebar__switcher--blue::after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-color: $white;
+    border-radius: 24px;
+    transform: scale(0.8);
+    left: 0;
+    transition: left 0.1s ease-in-out;
+     box-shadow: 0 1px 4px rgba(0,0,0,.4); 
+}
+
+input[type=checkbox].sidebar__switcher--blue:checked::after {
+    left: 24px;
+}
+
+/* ------------- YELLOW SWITCHER ------------- */
+
+input[type=checkbox].sidebar__switcher--yellow {
+    position: relative;
+    width: 48px;
+    height: 24px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border-radius: 24px;
+    background-color: $light-grey;
+    transition: background-color 0.1s ease-in-out;
+    outline: 0;
+    cursor: pointer;
+}
+
+input[type=checkbox].sidebar__switcher--yellow:checked {
+    background-color: $yellow;
+}
+
+input[type=checkbox].sidebar__switcher--yellow::after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-color: $white;
+    border-radius: 24px;
+    transform: scale(0.8);
+    left: 0;
+    transition: left 0.1s ease-in-out;
+    box-shadow: 0 1px 4px rgba(0,0,0,.4); 
+}
+
+input[type=checkbox].sidebar__switcher--yellow:checked::after {
+    left: 24px;
+}
