@@ -8,9 +8,7 @@
     justify-content: center;
 }
 
-.messages {
-    max-width: 40%;
-}
+/* ------------- EDITOR ------------- */
 
 .editor {
     display: flex;
@@ -66,6 +64,27 @@
     }
 
 }
+
+/* ------------- MESSENGER ------------- */
+
+.messages {
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+
+    &__header {
+        margin: 0;
+        font-size: 32px;
+        font-weight: 400;
+
+        .material-icons--playlist {
+            font-size: 32px;
+            margin-left: 15px;
+        }
+    }
+}
+
+/* -------------- SIDEBAR -------------- */
 
 .sidebar {
     padding: 40px 0 0 5px;
