@@ -82,7 +82,30 @@
             margin-left: 15px;
         }
     }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3px;
+
+        .form {
+            display: flex;
+            flex-wrap: wrap;
+
+                &__label {
+                    height: 48px;
+                    width: 400px;
+                    background-color: $olive;
+                    color: $white;
+                    border-radius: 5px 5px 0 0;
+                    line-height: 48px;
+                    padding-left: 20px;
+            }
+        }
+    }
 }
+
+
 
 /* -------------- SIDEBAR -------------- */
 
