@@ -3,6 +3,7 @@ const btnReload = document.querySelector('.message__btn--reload-js');
 const btnAdd = document.querySelector('.form__btn--js');
 const btnSizeDown = document.querySelector('.editor__btn--size-down-js');
 const btnSizeUp = document.querySelector('.editor__btn--size-up-js');
+const btnBold = document.querySelector('.editor__btn--bold-js');
 const textMessage = document.querySelector('.form__textarea--js');
 const allTextMessages = document.querySelector('.editor__textarea-edit--js');
 
@@ -27,6 +28,10 @@ function fontSizeUp() {
     size = size + 1;
 }
 
+function fontStyleBold() {
+    allTextMessages.classList.toggle('bold');
+}
+
 function reloadServer() {
     location.reload(true);
 }
@@ -35,3 +40,4 @@ btnReload.addEventListener('click', reloadServer);
 btnAdd.addEventListener('click', addMessage);
 btnSizeDown.addEventListener('click', fontSizeDown);
 btnSizeUp.addEventListener('click', fontSizeUp);
+btnBold.addEventListener('click', fontStyleBold);
