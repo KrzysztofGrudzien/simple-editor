@@ -56,6 +56,11 @@ function addMessage(e) {
     if (messages.length > 0) {
         btnReload.removeAttribute("disabled");
     }
+
+    // deactivate button when the number of messages equal length of messages array
+    if (settingsCounter.value == messages.length) {
+        btnAdd.setAttribute("disabled", true);
+    }
 }
 
 // font size is of one size less
