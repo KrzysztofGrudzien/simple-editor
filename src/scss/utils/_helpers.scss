@@ -15,3 +15,10 @@
 .italic {
     font-style: italic;
 }
+
+/* ------------- DISABLED BUTTONS ------------- */
+
+.deactivate {
+    background-color: $light-grey;
+    color: $grey;
+}
