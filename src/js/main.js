@@ -15,6 +15,7 @@ const counterMessages = document.querySelector('.messages__counter--js');
 const textMessage = document.querySelector('.form__textarea--js');
 const allTextMessages = document.querySelector('.editor__textarea-edit--js');
 const btnDelete = document.querySelector('.editor__btn--delete-js');
+const btnClear = document.querySelector('.message__btn--remove-js');
 const btnLoad = document.querySelector('.editor__btn--load-js');
 const btnSave = document.querySelector('.editor__btn--save-js');
 
@@ -114,6 +115,10 @@ function saveData() {
     }
     localStorage.setItem('message', allTextMessages.value);
 }
+// remove data of localStorage
+function clearMemory() {
+    localStorage.removeItem('message');
+}
 
 btnReload.addEventListener('click', reloadServer);
 btnAdd.addEventListener('click', addMessage);
@@ -126,5 +131,6 @@ btnItalic.addEventListener('click', fontStyleItalic);
 btnSelectFont.addEventListener('click', selectFont);
 btnLoad.addEventListener('click', loadData);
 btnSave.addEventListener('click', saveData);
+btnClear.addEventListener('click', clearMemory);
 
 
