@@ -89,9 +89,12 @@
         </main>
         <aside class="sidebar">
             <div class="sidebar__theme-switchers">
-                <input type="checkbox" class="sidebar__switcher sidebar__switcher--blue">
-                <input type="checkbox" class="sidebar__switcher sidebar__switcher--olive" checked>
-                <input type="checkbox" class="sidebar__switcher sidebar__switcher--yellow">
+                <input type="radio" id="blue" class="sidebar__input sidebar__input--blue-js" name="theme" checked>
+                <label for="blue" class="sidebar__label sidebar__label--blue-js">Blue</label>
+                <input type="radio" id="olive" class="sidebar__input sidebar__input--olive-js" name="theme">
+                <label for="olive" class="sidebar__label sidebar__label--olive-js">Olive</label>
+                <input type="radio" id="yellow" class="sidebar__input sidebar__input--yellow-js" name="theme" checked>
+                <label for="yellow" class="sidebar__label sidebar__label--yellow-js">Yellow</label>
             </div>
         </aside>
         <footer class="footer">
