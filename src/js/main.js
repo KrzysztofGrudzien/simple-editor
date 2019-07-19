@@ -3,7 +3,6 @@
 // get elements which use JS 
 const btnReload = document.querySelector('.message__btn--reload-js');
 const btnAdd = document.querySelector('.form__btn--js');
-const btnDelete = document.querySelector('.editor__btn--delete-js');
 const btnSizeDown = document.querySelector('.editor__btn--size-down-js');
 const btnSizeUp = document.querySelector('.editor__btn--size-up-js');
 const btnBold = document.querySelector('.editor__btn--bold-js');
@@ -15,6 +14,8 @@ const settingsCounter = document.querySelector('.messages__settings-input--js');
 const counterMessages = document.querySelector('.messages__counter--js');
 const textMessage = document.querySelector('.form__textarea--js');
 const allTextMessages = document.querySelector('.editor__textarea-edit--js');
+const btnDelete = document.querySelector('.editor__btn--delete-js');
+const btnLoad = document.querySelector('.editor__btn--load-js');
 
 // default settings
 const messages = [];
@@ -101,6 +102,10 @@ function reloadServer() {
 function deleteContent() {
     allTextMessages.value = '';
 }
+//function loading data from array
+function loadData() {
+    allTextMessages.value = messages.join("\n\n");
+}
 
 btnReload.addEventListener('click', reloadServer);
 btnAdd.addEventListener('click', addMessage);
@@ -111,5 +116,6 @@ btnBold.addEventListener('click', fontStyleBold);
 btnUnderline.addEventListener('click', fontStyleUnderline);
 btnItalic.addEventListener('click', fontStyleItalic);
 btnSelectFont.addEventListener('click', selectFont);
+btnLoad.addEventListener('click', loadData);
 
 
