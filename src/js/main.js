@@ -3,6 +3,7 @@
 // get elements which use JS 
 const btnReload = document.querySelector('.message__btn--reload-js');
 const btnAdd = document.querySelector('.form__btn--js');
+const btnDelete = document.querySelector('.editor__btn--delete-js');
 const btnSizeDown = document.querySelector('.editor__btn--size-down-js');
 const btnSizeUp = document.querySelector('.editor__btn--size-up-js');
 const btnBold = document.querySelector('.editor__btn--bold-js');
@@ -86,21 +87,24 @@ function fontStyleUnderline() {
 function fontStyleItalic() {
     allTextMessages.classList.toggle('italic');
 }
-
 // select font-family
 function selectFont() {
     const selector = document.getElementById('select');
     const value = selector[selector.selectedIndex].value;
     allTextMessages.style.fontFamily = value;
 }
-
 // reload page
 function reloadServer() {
     location.reload(true);
 }
+// delete content of textarea
+function deleteContent() {
+    allTextMessages.value = '';
+}
 
 btnReload.addEventListener('click', reloadServer);
 btnAdd.addEventListener('click', addMessage);
+btnDelete.addEventListener('click', deleteContent);
 btnSizeDown.addEventListener('click', fontSizeDown);
 btnSizeUp.addEventListener('click', fontSizeUp);
 btnBold.addEventListener('click', fontStyleBold);
