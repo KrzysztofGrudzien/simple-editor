@@ -18,6 +18,9 @@ const btnDelete = document.querySelector('.editor__btn--delete-js');
 const btnClear = document.querySelector('.message__btn--remove-js');
 const btnLoad = document.querySelector('.editor__btn--load-js');
 const btnSave = document.querySelector('.editor__btn--save-js');
+const switchThemeBlue = document.querySelector('.sidebar__input--blue-js');
+const switchThemeOlive = document.querySelector('.sidebar__input--olive-js');
+const switchThemeYellow = document.querySelector('.sidebar__input--yellow-js');
 
 // default settings
 const messages = [];
@@ -119,6 +122,30 @@ function saveData() {
 function clearMemory() {
     localStorage.removeItem('message');
 }
+
+function themeSwitcherBlue() {
+    if ("input[id='blue'][checked=true]") {
+        const formLable = document.querySelector('.form__label');
+        formLable.style.backgroundColor = "blue";
+    }
+}
+
+function themeSwitcherOlive() {
+    if ("input[id='olive'][checked=true]") {
+        const formLable = document.querySelector('.form__label');
+        formLable.style.backgroundColor = "olive";
+    }
+}
+
+function themeSwitcherYellow() {
+    if ("input[id='yellow'][checked=true]") {
+        const formLable = document.querySelector('.form__label');
+        formLable.style.backgroundColor = "yellow";
+    }
+}
+switchThemeBlue.addEventListener('click', themeSwitcherBlue);
+switchThemeOlive.addEventListener('click', themeSwitcherOlive);
+switchThemeYellow.addEventListener('click', themeSwitcherYellow);
 
 btnReload.addEventListener('click', reloadServer);
 btnAdd.addEventListener('click', addMessage);
