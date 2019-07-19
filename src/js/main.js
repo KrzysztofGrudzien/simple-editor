@@ -8,6 +8,7 @@ const btnSizeUp = document.querySelector('.editor__btn--size-up-js');
 const btnBold = document.querySelector('.editor__btn--bold-js');
 const btnUnderline = document.querySelector('.editor__btn--underline-js');
 const btnItalic = document.querySelector('.editor__btn--italic-js');
+const btnSelectFont = document.querySelector('.editor__select--js');
 const boxAlert = document.querySelector('.alert-description--js');
 const settingsCounter = document.querySelector('.messages__settings-input--js');
 const counterMessages = document.querySelector('.messages__counter--js');
@@ -85,6 +86,14 @@ function fontStyleUnderline() {
 function fontStyleItalic() {
     allTextMessages.classList.toggle('italic');
 }
+
+// select font-family
+function selectFont() {
+    const selector = document.getElementById('select');
+    const value = selector[selector.selectedIndex].value;
+    allTextMessages.style.fontFamily = value;
+}
+
 // reload page
 function reloadServer() {
     location.reload(true);
@@ -97,3 +106,6 @@ btnSizeUp.addEventListener('click', fontSizeUp);
 btnBold.addEventListener('click', fontStyleBold);
 btnUnderline.addEventListener('click', fontStyleUnderline);
 btnItalic.addEventListener('click', fontStyleItalic);
+btnSelectFont.addEventListener('click', selectFont);
+
+
