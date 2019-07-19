@@ -56,6 +56,7 @@
         width: 672px;
         height: 500px;
         border-radius: 5px;
+        padding: 10px;
     }
 
     &__buttons {
@@ -77,11 +78,25 @@
         margin: 0;
         font-size: 32px;
         font-weight: 400;
+        position: relative;
 
         .material-icons--playlist {
             font-size: 32px;
             margin-left: 15px;
         }
+    }
+
+    &__counter {
+        width: 32px;
+        height: 32px;
+        display: inline-block;
+        position: absolute;
+        right: 20px;
+        border-radius: 50%;
+        background-color: $olive;
+        line-height: 32px;
+        text-align: center;
+        font-size: 16px;
     }
 
     &__form {
@@ -100,7 +115,7 @@
                     color: $white;
                     border-radius: 5px 5px 0 0;
                     line-height: 48px;
-                    padding-left: 20px;
+                    padding-left: 10px;
                 }
 
                 &__textarea {
@@ -108,6 +123,7 @@
                     width: 428px;
                     border-radius: 0 0 5px 5px;
                     margin-bottom: 5px;
+                    padding: 10px;
                 }
 
                 &__btn {

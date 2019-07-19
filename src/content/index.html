@@ -10,13 +10,7 @@
 </head>
 
 <body>
-    <div class="alert alert--js" hidden>
-        <p class="alert__description alert__description--success alert__description--js">Success - message was sent
-            correctly</p>
-        <p class="alert__description alert__description--error alert__description--js">Error - the message wasn't sent
-            correctly.
-            Your message is empty. Fill up the input field and try again.</p>
-    </div>
+    <p class="alert-description alert-description--js">Alert message</p>
     <div class="wrapper">
         <header class="header">
             <h1 class="header__heading">SIMPLE EDITOR v.1.0</h1>
@@ -25,6 +19,7 @@
             <section class="messages">
                 <h2 class="messages__header">Your messages<span
                         class="material-icons material-icons--playlist">playlist_add</span>
+                    <span class="messages__counter messages__counter--js">0</span>
                 </h2>
                 <div class="messages__form">
                     <form class="form">
@@ -37,7 +32,7 @@
                 <div class="messages__settings">
                     <h3 class="messages__settings-header">Settings<span
                             class="material-icons material-icons--settings">settings</span></h3>
-                    <label for="amount" class="messages__settings-label">How many messages:</label>
+                    <label for="amount" class="messages__settings-label">How many messages (max 20):</label>
                     <input type="number" min="1" max="20" name="amount" id="amount"
                         class="messages__settings-input messages__settings-input--js">
                 </div>
@@ -64,11 +59,13 @@
                         </p>
                         <p class="editor__tools-select">
                             <select name="select" id="select" class="editor__select editor__select--js">
-                                <option value="arial">Aa</option>
+                                <option value="arial" selected>Aa</option>
+                                <option value="verdana">Verdana</option>
                                 <option value="times-new-roman">Times New Roman</option>
-                                <option value="slab">Slab</option>
+                                <option value="georgia">Georgia</option>
                                 <option value="monospace">Monospace</option>
-                                <option value="script">Script</option>
+                                <option value="calibri">Calibri</option>
+                                <option value="impact">Impact</option>
                             </select>
                         </p>
                         <p class="editor__tools-buttons">
@@ -94,9 +91,12 @@
         </main>
         <aside class="sidebar">
             <div class="sidebar__theme-switchers">
-                <input type="checkbox" class="sidebar__switcher sidebar__switcher--blue">
-                <input type="checkbox" class="sidebar__switcher sidebar__switcher--olive" checked>
-                <input type="checkbox" class="sidebar__switcher sidebar__switcher--yellow">
+                <input type="radio" id="blue" class="sidebar__input sidebar__input--blue-js" name="theme" checked>
+                <label for="blue" class="sidebar__label sidebar__label--blue-js">Blue</label>
+                <input type="radio" id="olive" class="sidebar__input sidebar__input--olive-js" name="theme">
+                <label for="olive" class="sidebar__label sidebar__label--olive-js">Olive</label>
+                <input type="radio" id="yellow" class="sidebar__input sidebar__input--yellow-js" name="theme" checked>
+                <label for="yellow" class="sidebar__label sidebar__label--yellow-js">Yellow</label>
             </div>
         </aside>
         <footer class="footer">
