@@ -14,6 +14,10 @@ const settingsCounter = document.querySelector('.messages__settings-input--js');
 const counterMessages = document.querySelector('.messages__counter--js');
 const textMessage = document.querySelector('.form__textarea--js');
 const allTextMessages = document.querySelector('.editor__textarea-edit--js');
+const btnDelete = document.querySelector('.editor__btn--delete-js');
+const btnClear = document.querySelector('.message__btn--remove-js');
+const btnLoad = document.querySelector('.editor__btn--load-js');
+const btnSave = document.querySelector('.editor__btn--save-js');
 
 // default settings
 const messages = [];
@@ -86,26 +90,47 @@ function fontStyleUnderline() {
 function fontStyleItalic() {
     allTextMessages.classList.toggle('italic');
 }
-
 // select font-family
 function selectFont() {
     const selector = document.getElementById('select');
     const value = selector[selector.selectedIndex].value;
     allTextMessages.style.fontFamily = value;
 }
-
 // reload page
 function reloadServer() {
     location.reload(true);
 }
+// delete content of textarea
+function deleteContent() {
+    allTextMessages.value = '';
+}
+// load data from array
+function loadData() {
+    allTextMessages.value = messages.join("\n\n");
+}
+// save data in the localStorage
+function saveData() {
+    if (localStorage.getItem('message')) {
+        allTextMessages.value = localStorage.getItem('message');
+    }
+    localStorage.setItem('message', allTextMessages.value);
+}
+// remove data of localStorage
+function clearMemory() {
+    localStorage.removeItem('message');
+}
 
 btnReload.addEventListener('click', reloadServer);
 btnAdd.addEventListener('click', addMessage);
+btnDelete.addEventListener('click', deleteContent);
 btnSizeDown.addEventListener('click', fontSizeDown);
 btnSizeUp.addEventListener('click', fontSizeUp);
 btnBold.addEventListener('click', fontStyleBold);
 btnUnderline.addEventListener('click', fontStyleUnderline);
 btnItalic.addEventListener('click', fontStyleItalic);
 btnSelectFont.addEventListener('click', selectFont);
+btnLoad.addEventListener('click', loadData);
+btnSave.addEventListener('click', saveData);
+btnClear.addEventListener('click', clearMemory);
 
 

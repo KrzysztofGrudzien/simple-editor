@@ -93,11 +93,11 @@
     cursor: pointer;
 }
 
-/* ================================== */
-/*  BUTTONS SAVING AND LOADING DATA   */
-/* ================================== */
+/* ========================================= */
+/*  BUTTONS SAVING, LOADING, DELETING DATA   */
+/* ========================================= */
 
-.editor__btn--load, .editor__btn--save {
+.editor__btn--load, .editor__btn--save, .editor__btn--delete {
     position: relative;
     width: 110px;
     height: 36px;
@@ -111,7 +111,7 @@
     cursor: pointer;
 }
 
-.material-icons--load, .material-icons--save {
+.material-icons--load, .material-icons--save, .material-icons--delete {
     position: absolute;
     top: 6px;
     left: 4px;
