@@ -18,6 +18,10 @@ const btnDelete = document.querySelector('.editor__btn--delete-js');
 const btnClear = document.querySelector('.message__btn--remove-js');
 const btnLoad = document.querySelector('.editor__btn--load-js');
 const btnSave = document.querySelector('.editor__btn--save-js');
+const formLable = document.querySelector('.form__label--js');
+const headerSettings = document.querySelector('.messages__settings-header--js');
+const headerCleaning = document.querySelector('.messages__cleaning-header--js');
+const footer = document.querySelector('.footer--js');
 const switchThemeBlue = document.querySelector('.sidebar__input--blue-js');
 const switchThemeOlive = document.querySelector('.sidebar__input--olive-js');
 const switchThemeYellow = document.querySelector('.sidebar__input--yellow-js');
@@ -122,25 +126,104 @@ function saveData() {
 function clearMemory() {
     localStorage.removeItem('message');
 }
-
+// set color blue
 function themeSwitcherBlue() {
     if ("input[id='blue'][checked=true]") {
-        const formLable = document.querySelector('.form__label');
-        formLable.style.backgroundColor = "blue";
+        formLable.style.backgroundColor = "#2D9CDB";
+        formLable.style.color = "#ffffff";
+        btnAdd.style.backgroundColor = "#2D9CDB";
+        btnAdd.style.color = "#ffffff";
+        formLable.style.color = "#ffffff";
+        counterMessages.style.backgroundColor = "#2D9CDB";
+        counterMessages.style.color = "#ffffff";
+        btnBold.style.color = "#2D9CDB";
+        btnClear.style.backgroundColor = "#2D9CDB";
+        btnClear.style.color = "#ffffff";
+        btnDelete.style.backgroundColor = "#2D9CDB";
+        btnDelete.style.color = "#ffffff";
+        btnItalic.style.color = "#2D9CDB";
+        btnUnderline.style.color = "#2D9CDB";
+        btnClear.style.backgroundColor = "#2D9CDB";
+        btnClear.style.color = "#ffffff";
+        btnLoad.style.backgroundColor = "#2D9CDB";
+        btnLoad.style.color = "#ffffff";
+        btnReload.style.backgroundColor = "#2D9CDB";
+        btnReload.style.color = "#ffffff";
+        btnSave.style.backgroundColor = "#2D9CDB";
+        btnSave.style.color = "#ffffff";
+        btnSelectFont.style.color = "#2D9CDB";
+        btnSizeDown.style.color = "#2D9CDB";
+        btnSizeUp.style.color = "#2D9CDB";
+        footer.style.backgroundColor = "#2D9CDB";
+        footer.style.color = "#ffffff";
+        headerSettings.style.color = "#2D9CDB";
+        headerCleaning.style.color = "#2D9CDB";
     }
 }
-
+// set color olive
 function themeSwitcherOlive() {
     if ("input[id='olive'][checked=true]") {
-        const formLable = document.querySelector('.form__label');
-        formLable.style.backgroundColor = "olive";
+        formLable.style.backgroundColor = "#7BAE53";
+        formLable.style.color = "#ffffff";
+        btnAdd.style.backgroundColor = "#7BAE53";
+        btnAdd.style.color = "#ffffff";
+        counterMessages.style.backgroundColor = "#7BAE53";
+        counterMessages.style.color = "#ffffff";
+        btnBold.style.color = "#7BAE53";
+        btnClear.style.backgroundColor = "#7BAE53";
+        btnClear.style.color = "#ffffff";
+        btnDelete.style.backgroundColor = "#7BAE53";
+        btnDelete.style.color = "#ffffff";
+        btnItalic.style.color = "#7BAE53";
+        btnUnderline.style.color = "#7BAE53";
+        btnClear.style.backgroundColor = "#7BAE53";
+        btnClear.style.color = "#ffffff";
+        btnLoad.style.backgroundColor = "#7BAE53";
+        btnLoad.style.color = "#ffffff";
+        btnReload.style.backgroundColor = "#7BAE53";
+        btnReload.style.color = "#ffffff";
+        btnSave.style.backgroundColor = "#7BAE53";
+        btnSave.style.color = "#ffffff";
+        btnSelectFont.style.color = "#7BAE53";
+        btnSizeDown.style.color = "#7BAE53";
+        btnSizeUp.style.color = "#7BAE53";
+        footer.style.backgroundColor = "#7BAE53";
+        footer.style.color = "#ffffff";
+        headerSettings.style.color = "#7BAE53";
+        headerCleaning.style.color = "#7BAE53";
     }
 }
-
+// set color yellow
 function themeSwitcherYellow() {
     if ("input[id='yellow'][checked=true]") {
-        const formLable = document.querySelector('.form__label');
-        formLable.style.backgroundColor = "yellow";
+        formLable.style.backgroundColor = "#F2C94C";
+        formLable.style.color = "#000000";
+        btnAdd.style.backgroundColor = "#F2C94C";
+        btnAdd.style.color = "#000000";
+        counterMessages.style.backgroundColor = "#F2C94C";
+        counterMessages.style.color = "#000000";
+        btnBold.style.color = "#F2C94C";
+        btnClear.style.backgroundColor = "#F2C94C";
+        btnClear.style.color = "#000000";
+        btnDelete.style.backgroundColor = "#F2C94C";
+        btnDelete.style.color = "#000000";
+        btnItalic.style.color = "#F2C94C";
+        btnUnderline.style.color = "#F2C94C";
+        btnClear.style.backgroundColor = "#F2C94C";
+        btnClear.style.color = "#000000";
+        btnLoad.style.backgroundColor = "#F2C94C";
+        btnLoad.style.color = "#000000";
+        btnReload.style.backgroundColor = "#F2C94C";
+        btnReload.style.color = "#000000";
+        btnSave.style.backgroundColor = "#F2C94C";
+        btnSave.style.color = "#000000";
+        btnSelectFont.style.color = "#F2C94C";
+        btnSizeDown.style.color = "#F2C94C";
+        btnSizeUp.style.color = "#F2C94C";
+        footer.style.backgroundColor = "#F2C94C";
+        footer.style.color = "#000000";
+        headerSettings.style.color = "#F2C94C";
+        headerCleaning.style.color = "#F2C94C";
     }
 }
 switchThemeBlue.addEventListener('click', themeSwitcherBlue);
