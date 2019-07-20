@@ -23,21 +23,22 @@
                 </h2>
                 <div class="messages__form">
                     <form class="form">
-                        <label for="message" class="form__label">Please enter your message below:</label>
+                        <label for="message" class="form__label form__label--js">Please enter your message
+                            below:</label>
                         <textarea class="form__textarea form__textarea--js" id="message"></textarea>
                         <button type="submit" class="form__btn form__btn--js"><span
                                 class="material-icons material-icons--add">add</span>add</button>
                     </form>
                 </div>
                 <div class="messages__settings">
-                    <h3 class="messages__settings-header">Settings<span
+                    <h3 class="messages__settings-header messages__settings-header--js">Settings<span
                             class="material-icons material-icons--settings">settings</span></h3>
                     <label for="amount" class="messages__settings-label">How many messages (max 20):</label>
                     <input type="number" min="1" max="20" name="amount" id="amount"
                         class="messages__settings-input messages__settings-input--js">
                 </div>
                 <div class="messages__cleanning-up">
-                    <h3 class="messages__cleaning-header">Cleaning up<span
+                    <h3 class="messages__cleaning-header messages__cleaning-header--js">Cleaning up<span
                             class="material-icons material-icons--clear">clear_all</span></h3>
                     <button type="button" class="message__btn message__btn--remove-js"><span
                             class="material-icons material-icons--delete">delete_forever</span>clear</button>
@@ -93,15 +94,15 @@
         </main>
         <aside class="sidebar">
             <div class="sidebar__theme-switchers">
-                <input type="radio" id="blue" class="sidebar__input sidebar__input--blue-js" name="theme" checked>
+                <input type="radio" id="blue" class="sidebar__input sidebar__input--blue-js" name="theme">
                 <label for="blue" class="sidebar__label sidebar__label--blue-js">Blue</label>
-                <input type="radio" id="olive" class="sidebar__input sidebar__input--olive-js" name="theme">
+                <input type="radio" id="olive" class="sidebar__input sidebar__input--olive-js" name="theme" checked>
                 <label for="olive" class="sidebar__label sidebar__label--olive-js">Olive</label>
-                <input type="radio" id="yellow" class="sidebar__input sidebar__input--yellow-js" name="theme" checked>
+                <input type="radio" id="yellow" class="sidebar__input sidebar__input--yellow-js" name="theme">
                 <label for="yellow" class="sidebar__label sidebar__label--yellow-js">Yellow</label>
             </div>
         </aside>
-        <footer class="footer">
+        <footer class="footer footer--js">
             <p class="footer__content">Made by <a class="footer__link" href="http://www.criscode.pl">Krzysztof
                     Grudzień</a> -
                 2019</p>
