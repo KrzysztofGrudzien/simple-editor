@@ -12,7 +12,9 @@
 //             "footer footer footer footer";
 // }
 
-.wrapper {
+/* ----------- DESKTOP LARGE---------- */
+@include device(big-desktop){
+    .wrapper {
     display: grid;
     grid-template-columns: 1fr 1120px 160px 1fr;
     grid-template-rows: [header-start] 143px [header-end content-start] auto [content-end footer-start] 45px [footer-end];
@@ -20,4 +22,17 @@
             "header header header header"
             "... content sidebar ..."
             "footer footer footer footer";
+    }
 }
+
+// @include device(desktop){
+//     .wrapper {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr 1fr 1fr;
+//     grid-template-rows: [header-start] 143px [header-end content-start] auto [content-end footer-start] 45px [footer-end];
+//     grid-template-areas:
+//             "header header header header"
+//             "content content content sidebar"
+//             "footer footer footer footer";
+//     }
+// }
