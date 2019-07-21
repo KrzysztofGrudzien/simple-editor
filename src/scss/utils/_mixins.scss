@@ -1,0 +1,34 @@
+/* ================================== */
+/*                 RWD                */
+/* ================================== */
+
+/* 
+0 - 640px: Phone
+640px - 1024px: Tablet
+1024px - 1280px: Desktop
+1281px + - Large Screen 
+*/
+$phone: 'screen and (max-width: 640px)';
+$tablet: 'screen and (max-width: 1024px)';
+$desktop: 'screen and (max-width: 1280px)';
+$big-desktop: 'screen and (min-width: 1281px)';
+
+@mixin device($breakpoint) {
+    @if $breakpoint==big-desktop {
+        @media #{$big-desktop} {
+            @content;
+        }
+    }
+
+    @else if $breakpoint==desktop {
+        @media #{$desktop} {
+            @content;
+        }
+    }
+
+    @else if $breakpoint==tablet {
+        @media #{$tablet} {
+            @content;
+        }
+    }
+}
