@@ -25,14 +25,18 @@
     }
 }
 
-// @include device(desktop){
-//     .wrapper {
-//     display: grid;
-//     grid-template-columns: 1fr 1fr 1fr 1fr;
-//     grid-template-rows: [header-start] 143px [header-end content-start] auto [content-end footer-start] 45px [footer-end];
-//     grid-template-areas:
-//             "header header header header"
-//             "content content content sidebar"
-//             "footer footer footer footer";
-//     }
-// }
+@include device(desktop){
+    .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: [header-start] 145px [header-end content-start] auto [content-end footer-start] 45px [footer-end];
+    grid-template-areas:
+            "header header header header"
+            "content content content sidebar"
+            "footer footer footer footer";
+    }
+
+    main {
+        margin-left: 20px;
+    }
+}
