@@ -13,44 +13,15 @@
     <p class="alert-description alert-description--js">Alert message</p>
     <div class="wrapper">
         <header class="header">
-            <h1 class="header__heading">SIMPLE EDITOR v.1.0</h1>
+            <h1 class="header__heading">SIMPLE EDITOR v.2.0</h1>
         </header>
         <main class="main">
-            <section class="messages">
-                <h2 class="messages__header">Your messages<span
-                        class="material-icons material-icons--playlist">playlist_add</span>
-                    <span class="messages__counter messages__counter--js">0</span>
-                </h2>
-                <div class="messages__form">
-                    <form class="form">
-                        <label for="message" class="form__label form__label--js">Please enter your message
-                            below:</label>
-                        <textarea class="form__textarea form__textarea--js" id="message"></textarea>
-                        <button type="submit" class="form__btn form__btn--js"><span
-                                class="material-icons material-icons--add">add</span>add</button>
-                    </form>
-                </div>
-                <div class="messages__settings">
-                    <h3 class="messages__settings-header messages__settings-header--js">Settings<span
-                            class="material-icons material-icons--settings">settings</span></h3>
-                    <label for="amount" class="messages__settings-label">How many messages (max 20):</label>
-                    <input type="number" min="1" max="20" name="amount" id="amount"
-                        class="messages__settings-input messages__settings-input--js">
-                </div>
-                <div class="messages__cleanning-up">
-                    <h3 class="messages__cleaning-header messages__cleaning-header--js">Cleaning up<span
-                            class="material-icons material-icons--clear">clear_all</span></h3>
-                    <button type="button" class="message__btn message__btn--remove-js"><span
-                            class="material-icons material-icons--delete">delete_forever</span>clear</button>
-                    <button type="button" class="message__btn message__btn--reload-js"><span
-                            class="material-icons material-icons--refresh">refresh</span>reload</button>
-                </div>
-            </section>
             <section class="editor">
-                <h2 class="editor__heading" hidden>Edit</h2>
+                <h2 class="editor__heading" hidden>Your message</h2>
                 <section class="editor__tools">
-                    <h2 class="editor__header">Edit<span class="material-icons material-icons--edit">mode_edit</span>
-                    </h2>
+                    <h3 class="editor__header">Your message<span
+                            class="material-icons material-icons--edit">mode_edit</span>
+                    </h3>
                     <div class="editor__box">
                         <p class="editor__tools-buttons">
                             <button type="button" class="editor__btn editor__btn--size-down-js">A<span
@@ -79,6 +50,7 @@
                     </div>
                 </section>
                 <div class="editor__textarea">
+                    <div class="editor__input">Please enter your message below</div>
                     <textarea name="textarea" id="text"
                         class="editor__textarea-edit editor__textarea-edit--js"></textarea>
                     <p class="editor__buttons">
@@ -94,12 +66,23 @@
         </main>
         <aside class="sidebar">
             <div class="sidebar__theme-switchers">
-                <input type="radio" id="blue" class="sidebar__input sidebar__input--blue-js" name="theme">
-                <label for="blue" class="sidebar__label sidebar__label--blue-js">Blue</label>
-                <input type="radio" id="olive" class="sidebar__input sidebar__input--olive-js" name="theme" checked>
-                <label for="olive" class="sidebar__label sidebar__label--olive-js">Olive</label>
-                <input type="radio" id="yellow" class="sidebar__input sidebar__input--yellow-js" name="theme">
-                <label for="yellow" class="sidebar__label sidebar__label--yellow-js">Yellow</label>
+                <input type="radio" id="blue" class="sidebar__input sidebar__input--blue sidebar__input--blue-js"
+                    name="theme">
+                <label for="blue" class="sidebar__label sidebar__label--blue sidebar__label--blue-js">Blue theme</label>
+                <input type="radio" id="olive" class="sidebar__input sidebar__input--olive sidebar__input--olive-js"
+                    name="theme" checked>
+                <label for="olive" class="sidebar__label sidebar__label--olive sidebar__label--olive-js">Olive
+                    theme</label>
+                <input type="radio" id="yellow" class="sidebar__input sidebar__input--yellow sidebar__input--yellow-js"
+                    name="theme">
+                <label for="yellow" class="sidebar__label sidebar__label--yellow sidebar__label--yellow-js">Yellow
+                    theme</label>
+            </div>
+            <div class="sidebar__cleanning-up">
+                <button type="button" class="sidebar__btn sidebar__btn--remove sidebar__btn--remove-js"><span
+                        class="material-icons material-icons--delete">delete_forever</span>clear memory</button>
+                <button type="button" class="sidebar__btn sidebar__btn--reload sidebar__btn--reload-js"><span
+                        class="material-icons material-icons--refresh">refresh</span>refresh browser</button>
             </div>
         </aside>
         <footer class="footer footer--js">

@@ -16,8 +16,8 @@
 @include device(big-desktop){
     .wrapper {
     display: grid;
-    grid-template-columns: 1fr 1120px 160px 1fr;
-    grid-template-rows: [header-start] 143px [header-end content-start] auto [content-end footer-start] 45px [footer-end];
+    grid-template-columns: 1fr 865px 256px 1fr;
+    grid-template-rows: [header-start] 145px [header-end content-start] auto [content-end footer-start] 45px [footer-end];
     grid-template-areas:
             "header header header header"
             "... content sidebar ..."
