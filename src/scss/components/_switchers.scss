@@ -3,11 +3,6 @@
 /* ================================== */
 
 .sidebar {
-
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        max-height: 442px;
     &__theme-switchers {
         display: flex;
         flex-direction: column;

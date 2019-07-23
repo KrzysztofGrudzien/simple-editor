@@ -40,3 +40,39 @@
         margin-left: 20px;
     }
 }
+
+@include device(tablet){
+    .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: [header-start] 100px [header-end content-start] auto [content-end sidebar-start] auto [sidebar-end footer-start] 45px [footer-end];
+    grid-template-areas:
+            "header header header header"
+            "content content content content"
+            "sidebar sidebar sidebar sidebar"
+            "footer footer footer footer";
+    }
+
+    main {
+        margin: 0 20px 0 20px;
+    }
+
+    .header {
+        &__heading {
+            font-size: 40px;
+        }
+    }
+
+    .sidebar {
+        flex-direction: row;
+        margin-right: 20px;
+        &__theme-switchers {
+            width: 30%;
+        }
+
+        &__cleanning-up {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
