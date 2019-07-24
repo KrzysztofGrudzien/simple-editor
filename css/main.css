@@ -33,22 +33,30 @@
 /* ---------- MESSAGE ALERT --------- */
 @-webkit-keyframes slideDownUp {
   0% {
-    margin-top: -48px; }
+    -webkit-transform: translateY(-48px);
+            transform: translateY(-48px); }
   10% {
-    margin-top: 0; }
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
   90% {
-    margin-top: 0; }
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
   100% {
-    margin-top: -48px; } }
+    -webkit-transform: translateY(-48px);
+            transform: translateY(-48px); } }
 @keyframes slideDownUp {
   0% {
-    margin-top: -48px; }
+    -webkit-transform: translateY(-48px);
+            transform: translateY(-48px); }
   10% {
-    margin-top: 0; }
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
   90% {
-    margin-top: 0; }
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
   100% {
-    margin-top: -48px; } }
+    -webkit-transform: translateY(-48px);
+            transform: translateY(-48px); } }
 
 /* ================================== */
 /*                 RWD                */
@@ -730,6 +738,7 @@ ol li {
   color: #2D9CDB; }
 
 .theme-blue .editor__btn {
+  border: solid 1px #2D9CDB;
   color: #2D9CDB; }
   .theme-blue .editor__btn--delete {
     color: #ffffff;
@@ -758,6 +767,7 @@ ol li {
   color: #F2C94C; }
 
 .theme-yellow .editor__btn {
+  border: solid 1px #F2C94C;
   color: #F2C94C; }
   .theme-yellow .editor__btn--delete {
     color: #000000;
@@ -813,7 +823,7 @@ ol li {
   z-index: 1000;
   width: 100%;
   height: 48px;
-  margin: -48px 0 0 0;
+  margin: 0;
   text-align: center;
   line-height: 48px;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.35); }
@@ -858,11 +868,13 @@ ol li {
 .editor__btn {
   position: relative;
   min-width: 40px;
-  border: none;
+  border: solid 1px #7BAE53;
+  border-radius: 5px;
   background: none;
   color: #7BAE53;
   font-size: 30px;
   text-align: center;
+  margin: 0 2px;
   cursor: pointer; }
   .editor__btn--bold {
     font-weight: 700; }
@@ -872,12 +884,16 @@ ol li {
     font-style: italic;
     font-family: 'Times New Roman', Times, serif; }
 
-.material-icons--size-up, .material-icons--size-down {
-  position: absolute;
-  top: 4px;
-  right: 0;
-  font-size: 14px;
-  color: #ffffff; }
+.editor__btn:last-child {
+  margin: 0 0 0 2px; }
+
+.editor__tools-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
 
 .editor__select {
   width: 60px;
@@ -887,6 +903,13 @@ ol li {
   color: #7BAE53;
   font-size: 30px;
   cursor: pointer; }
+
+.material-icons--size-up, .material-icons--size-down {
+  position: absolute;
+  top: 4px;
+  right: 0;
+  font-size: 14px;
+  color: #ffffff; }
 
 /* ========================================= */
 /*  BUTTONS SAVING, LOADING, DELETING DATA   */
