@@ -31,4 +31,10 @@ $big-desktop: 'screen and (min-width: 1281px)';
             @content;
         }
     }
+
+    @else if $breakpoint==phone {
+        @media #{$phone} {
+            @content;
+        }
+    }
 }
