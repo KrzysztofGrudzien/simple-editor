@@ -1,0 +1,43 @@
+.theme-blue {
+    .editor {
+        &__input {
+            background-color: $blue;
+        }
+        
+        &__header {
+            color: $blue;
+        }
+
+        &__btn {
+            color: $blue;
+            &--delete {
+                color: $white;
+                background-color: $blue;
+            }
+
+            &--load {
+                color: $white;
+                background-color: $blue;
+            }
+
+            &--save {
+                color: $white;
+                background-color: $blue;
+            }
+        }
+
+        &__select {
+            color: $blue;
+        }
+    }
+
+    .sidebar {
+        &__btn {
+            background-color: $blue;
+        }
+    }
+
+    .footer {
+        background-color: $blue;
+    }
+}

@@ -1,0 +1,43 @@
+.theme-olive {
+    .editor {
+        &__input {
+            background-color: $olive;
+        }
+        
+        &__header {
+            color: $olive;
+        }
+
+        &__btn {
+            color: $olive;
+            &--delete {
+                color: $white;
+                background-color: $olive;
+            }
+
+            &--load {
+                color: $white;
+                background-color: $olive;
+            }
+
+            &--save {
+                color: $white;
+                background-color: $olive;
+            }
+        }
+
+        &__select {
+            color: $olive;
+        }
+    }
+
+    .sidebar {
+        &__btn {
+            background-color: $olive;
+        }
+    }
+
+    .footer {
+        background-color: $olive;
+    }
+}

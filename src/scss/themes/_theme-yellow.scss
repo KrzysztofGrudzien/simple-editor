@@ -1,0 +1,46 @@
+.theme-yellow {
+    .editor {
+        &__input {
+            background-color: $yellow;
+            color: $black;
+        }
+        
+        &__header {
+            color: $yellow;
+        }
+
+        &__btn {
+            color: $yellow;
+            &--delete {
+                color: $black;
+                background-color: $yellow;
+            }
+
+            &--load {
+                color: $black;
+                background-color: $yellow;
+            }
+
+            &--save {
+                color: $black;
+                background-color: $yellow;
+            }
+        }
+
+        &__select {
+            color: $yellow;
+        }
+    }
+
+    .sidebar {
+        &__btn {
+            background-color: $yellow;
+            color: $black;
+        }
+    }
+
+    .footer {
+        background-color: $yellow;
+        color: $black;
+    }
+}
