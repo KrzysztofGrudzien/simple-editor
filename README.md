@@ -11,7 +11,7 @@ The main aim of this project is to put together everything I've learnt so far.
 - 👍 CSS3 (and a little bit animations) and SASS
 - 👍 BEM methodology.
 - 👍 Figma aplication.
-- 👍 JS ES6 (functions, events, arrays, localStorage).
+- 👍 JS ES6 (functions, events, localStorage).
 - 👍 GRID and FLEX BOX.
 - 👍 Devtools.
 - 👍 Solving many issues using Stack Overflow, MDM and others.
@@ -24,23 +24,16 @@ The main aim of this project is to put together everything I've learnt so far.
 
 ## Rules of project 🔔 - PLEASE READ IT BEFORE YOU USE EDITOR
 1. Fire up the editor.
-2. In the settings write a number how many messages you want to send (max 20). ⌨
-  - a) If you don't do it - the editor will give you error and you will deactivate the add button.
-  - b) If you do - write a message and send it. When a number of messages is an equal number of messages defined in the settings the add button will be activated. In this situation you can to send empty message many times if you want (the editor will give you correct alert)
-3. Then you can press the button load - on the right there are your messages 👌
-  - a) Now have fun with the editor buttons.
-  - b) You can change font size, underline, font family.
-  - c) On the right editor you can switch color theme.
-  - d) You have also button deleting content of messages and you can write your own message. Up to you. Remember if you write your own message and click load the message will be replaced messages added before!!!
- 4. Next click SAVE button - the message was saved in the localStorage
-  - a) You can click the reload button and reload page (everything was reseted)
-  - b) Click SAVE button again and the editor will give you saved message
- 5. Now we have the editor when you started work with it but (with localStorage so if you cancel it ...)
- 6. Click the button CLEAR and remove messages from localStorage.
-  - a) If you remember, if we don't define a number of messages the reload button is deactivated.
-  - b) This time you have to reload page with typical way - using browser button refresh or press F5.
+2. Write message and ...
+  - a) Click SAVE - your message is saved in the localStorage.
+  - b) Click DELETE - clear textarea field but you can't clear localStorage.
+  - c) Click LOAD - load saved message.
+  - d) Click CLEAR MEMORY - remove message from localStorage.
+  - e) Click REFRESH BROWSER - reload browser or press F5.
+3. Switch color themes - it's an independent feature.
+4. Edit your message - it's an indendent feature also.
  
- ## I wish you have a fun 🏆
+## I wish you have a fun 🏆
 
 ## How to run my local website?
 
@@ -53,5 +46,3 @@ If you want run my website locally, you should follow the instruction below:
 `gulp`
 
 To publish your page using github pages use `npm run deploy`
-
-## To be continued ... (RWD)
