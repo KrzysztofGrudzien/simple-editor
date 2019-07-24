@@ -10,6 +10,7 @@
         }
 
         &__btn {
+            border: solid 1px $yellow;
             color: $yellow;
             &--delete {
                 color: $black;
