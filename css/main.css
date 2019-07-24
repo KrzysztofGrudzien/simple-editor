@@ -426,7 +426,8 @@ ol li {
     font-size: 50px;
     line-height: 50px;
     letter-spacing: 10px;
-    color: #7BAE53; }
+    color: #ffffff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25); }
 
 /* ================================== */
 /*               FOOTER               */
@@ -721,6 +722,91 @@ ol li {
     -ms-grid-column-span: 4; } }
 
 /* ------------- PAGES -------------- */
+/* ------------- THEMES ------------- */
+.theme-blue .editor__input {
+  background-color: #2D9CDB; }
+
+.theme-blue .editor__header {
+  color: #2D9CDB; }
+
+.theme-blue .editor__btn {
+  color: #2D9CDB; }
+  .theme-blue .editor__btn--delete {
+    color: #ffffff;
+    background-color: #2D9CDB; }
+  .theme-blue .editor__btn--load {
+    color: #ffffff;
+    background-color: #2D9CDB; }
+  .theme-blue .editor__btn--save {
+    color: #ffffff;
+    background-color: #2D9CDB; }
+
+.theme-blue .editor__select {
+  color: #2D9CDB; }
+
+.theme-blue .sidebar__btn {
+  background-color: #2D9CDB; }
+
+.theme-blue .footer {
+  background-color: #2D9CDB; }
+
+.theme-yellow .editor__input {
+  background-color: #F2C94C;
+  color: #000000; }
+
+.theme-yellow .editor__header {
+  color: #F2C94C; }
+
+.theme-yellow .editor__btn {
+  color: #F2C94C; }
+  .theme-yellow .editor__btn--delete {
+    color: #000000;
+    background-color: #F2C94C; }
+  .theme-yellow .editor__btn--load {
+    color: #000000;
+    background-color: #F2C94C; }
+  .theme-yellow .editor__btn--save {
+    color: #000000;
+    background-color: #F2C94C; }
+
+.theme-yellow .editor__select {
+  color: #F2C94C; }
+
+.theme-yellow .sidebar__btn {
+  background-color: #F2C94C;
+  color: #000000; }
+
+.theme-yellow .footer {
+  background-color: #F2C94C;
+  color: #000000; }
+
+.theme-olive .editor__input {
+  background-color: #7BAE53; }
+
+.theme-olive .editor__header {
+  color: #7BAE53; }
+
+.theme-olive .editor__btn {
+  color: #7BAE53; }
+  .theme-olive .editor__btn--delete {
+    color: #ffffff;
+    background-color: #7BAE53; }
+  .theme-olive .editor__btn--load {
+    color: #ffffff;
+    background-color: #7BAE53; }
+  .theme-olive .editor__btn--save {
+    color: #ffffff;
+    background-color: #7BAE53; }
+
+.theme-olive .editor__select {
+  color: #7BAE53; }
+
+.theme-olive .sidebar__btn {
+  background-color: #7BAE53; }
+
+.theme-olive .footer {
+  background-color: #7BAE53; }
+
 /* ------------ COMPONENTS ----------- */
 .alert-description {
   position: fixed;
