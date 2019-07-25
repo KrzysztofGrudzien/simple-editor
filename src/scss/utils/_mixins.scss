@@ -3,11 +3,13 @@
 /* ================================== */
 
 /* 
-0 - 640px: Phone
+0 - 420px: Small Phone
+420px - 640px: Phone
 640px - 1024px: Tablet
 1024px - 1280px: Desktop
 1281px + - Large Screen 
 */
+$xs-phone: 'screen and (max-width: 420px)';
 $phone: 'screen and (max-width: 640px)';
 $tablet: 'screen and (max-width: 1024px)';
 $desktop: 'screen and (max-width: 1280px)';
@@ -34,6 +36,12 @@ $big-desktop: 'screen and (min-width: 1281px)';
 
     @else if $breakpoint==phone {
         @media #{$phone} {
+            @content;
+        }
+    }
+
+    @else if $breakpoint==xs-phone {
+        @media #{$xs-phone} {
             @content;
         }
     }
