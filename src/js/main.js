@@ -10,7 +10,6 @@ const btnItalic = document.querySelector('.editor__btn--italic-js');
 const btnSelectFont = document.querySelector('.editor__select--js');
 const boxAlert = document.querySelector('.alert-description--js');
 const allTextMessages = document.querySelector('.editor__textarea-edit--js');
-const btnDelete = document.querySelector('.editor__btn--delete-js');
 const btnClear = document.querySelector('.sidebar__btn--remove-js');
 const btnLoad = document.querySelector('.editor__btn--load-js');
 const btnSave = document.querySelector('.editor__btn--save-js');
@@ -55,10 +54,6 @@ function selectFont() {
 function reloadServer() {
     location.reload(true);
 }
-// delete content of textarea
-function deleteContent() {
-    allTextMessages.value = '';
-}
 // load data from array
 function loadData() {
     // if message is in the memory load data from localStorage
@@ -81,6 +76,7 @@ function saveData(e) {
         }, 5000);
         // rember message in the memory of browser
         localStorage.setItem('message', allTextMessages.value);
+        allTextMessages.value = '';
     } else {
         //add class when input field is empty
         boxAlert.classList.add('alert-description--error');
@@ -127,7 +123,6 @@ switchThemeOlive.addEventListener('click', themeSwitcherOlive);
 switchThemeYellow.addEventListener('click', themeSwitcherYellow);
 
 btnReload.addEventListener('click', reloadServer);
-btnDelete.addEventListener('click', deleteContent);
 btnSizeDown.addEventListener('click', fontSizeDown);
 btnSizeUp.addEventListener('click', fontSizeUp);
 btnBold.addEventListener('click', fontStyleBold);
