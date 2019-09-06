@@ -26,10 +26,9 @@ The main aim of this project is to put together everything I've learnt so far.
 1. Fire up the editor.
 2. Write message and ...
   - a) Click SAVE - your message is saved in the localStorage.
-  - b) Click DELETE - clear textarea field but you can't clear localStorage.
-  - c) Click LOAD - load saved message.
-  - d) Click CLEAR MEMORY - remove message from localStorage.
-  - e) Click REFRESH BROWSER - reload browser or press F5.
+  - b) Click LOAD - load saved message.
+  - c) Click CLEAR MEMORY - remove message from localStorage.
+  - d) Click REFRESH BROWSER - reload browser or press F5.
 3. Switch color themes - it's an independent feature.
 4. Edit your message - it's an indendent feature also.
  
